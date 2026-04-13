@@ -116,7 +116,60 @@
                 margin-top: 50px;
             }
         }
-    </style>
+    
+    .hero-section {
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    /* ইমেজকে একটু ডার্ক করার জন্য চাইলে নিচের ফিল্টারটি দিতে পারেন */
+    filter: brightness(90%); 
+}
+
+.hero-container {
+    position: relative;
+    text-align: center;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 90%;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero-text h1 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* মোবাইল রেসপন্সিভ */
+@media (max-width: 600px) {
+    .hero-text h1 {
+        font-size: 22px;
+    }
+    .hero-text p {
+        font-size: 14px;
+    }
+}
+</style>
 </head>
 <body>
 
