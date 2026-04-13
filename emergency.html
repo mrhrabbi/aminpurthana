@@ -23,6 +23,8 @@
             padding: 0;
             background-color: #f0f2f5;
         }
+        .top-header { background: linear-gradient(135deg, #002366, #004011); color: white; padding: 12px 0; text-align: center; position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+        .top-header h1 { font-size: 20px; letter-spacing: 1px; }
 
         /* Header */
         header {
@@ -173,7 +175,7 @@
 </head>
 <body>
 
-    <header>
+    <header class="top-header">
         <h1>আমিনপুর থানা, পাবনা</h1>
     </header>
   <section class="hero-section">
@@ -183,7 +185,7 @@
              title="আমিনপুর থানা জরুরি সেবা - পাবনা" 
              class="hero-image">
         
-        <div class="hero-text">
+        <div class="hero-text" display="none">
             <h1>আমিনপুর থানা জরুরি সেবা</h1>
             <p>২৪ ঘণ্টা দ্রুত এম্বুলেন্স ও ফায়ার সার্ভিস সহায়তা - পাবনা</p>
         </div>
